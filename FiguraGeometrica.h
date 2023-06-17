@@ -1,0 +1,19 @@
+#ifndef FIGURAGEOMETRICA_H
+#define FIGURAGEOMETRICA_H
+
+#include "Sculptor.h"
+/**
+*
+*@brief Classe mãe do projeto, usada para representar as figuras geométricas
+*@param float r, g, b, a
+*
+*/
+class FiguraGeometrica{
+protected:
+	float r, g, b, a;
+public:
+	virtual ~FiguraGeometrica(){};
+	virtual void draw(Sculptor &t) = 0; 
+};
+
+#endif // FIGURAGEOMETRICA_H
